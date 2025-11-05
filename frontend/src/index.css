@@ -1,0 +1,212 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1a0f28;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.auth-container, .profile-container {
+  background: linear-gradient(145deg, #2d1a3f, #3a205a);
+  padding: 2.5rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #ffb6c1;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group input {
+  width: calc(100% - 2.5rem - 20px);
+  padding: 0.8rem 1rem 0.8rem 2.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #e0e0e0;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: #b0b0b0;
+}
+
+.input-group input:focus {
+  border-color: #ffb6c1;
+  box-shadow: 0 0 0 3px rgba(255, 182, 193, 0.3);
+}
+
+.input-group .icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffb6c1;
+  font-size: 1.2rem;
+}
+
+select {
+  padding: 0.8rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #e0e0e0;
+  outline: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffb6c1%22%20d%3D%22M287%20165c-4.7%204.7-12.3%204.7-17%200L146.2%2027.2c-4.7-4.7-4.7-12.3%200-17l8.5-8.5c4.7-4.7%2012.3-4.7%2017%200l115.3%20115.3c4.7%204.7%204.7%2012.3%200%2017l-8.5%208.5z%22%2F%3E%3Cpath%20fill%3D%22%23ffb6c1%22%20d%3D%22M287%20165c-4.7%204.7-12.3%204.7-17%200L146.2%2027.2c-4.7-4.7-4.7-12.3%200-17l8.5-8.5c4.7-4.7%2012.3-4.7%2017%200l115.3%20115.3c4.7%204.7%204.7%2012.3%200%2017l-8.5%208.5z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 0.8em;
+}
+
+select option {
+  background-color: #2d1a3f;
+  color: #e0e0e0;
+}
+
+button {
+  background-color: #ffb6c1;
+  color: #1a0f28;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #ff9cab;
+  transform: translateY(-2px);
+}
+
+p {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #b0b0b0;
+}
+
+a {
+  color: #ffb6c1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.profile-container p {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+
+.profile-container p strong {
+  color: #ffb6c1;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.profile-container button {
+  background-color: #8a2be2;
+  color: white;
+}
+
+.profile-container button:hover {
+  background-color: #6a1aae;
+}
+
+.profile-picture-container {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffb6c1;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.4);
+}
+
+.profile-container input, .profile-container select {
+  width: 60%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 4px;
+}
+
+.profile-container .input-group input[name="fotoPerfilUrl"] {
+  width: calc(100% - 20px);
+  padding-left: 1rem;
+}
+
+.button-group {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button-group .cancel-button {
+  background-color: #555;
+}
+
+.button-group .cancel-button:hover {
+  background-color: #777;
+}
+
+@media (max-width: 600px) {
+  .auth-container, .profile-container {
+    padding: 1.5rem 2rem;
+    margin: 10px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .input-group input, button {
+    padding: 0.7rem 1rem;
+  }
+  .input-group .icon {
+    font-size: 1rem;
+    left: 0.8rem;
+  }
+}
