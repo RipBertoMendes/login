@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "be6f",
+      "nome": "Yan Mendes",
+      "cpf": "49009779858",
+      "dataNascimento": "2004-05-13",
+      "senha": "123",
+      "genero": "Masculino",
+      "email": "yanmbbertolino@gmail.com",
+      "fotoPerfilUrl": "9c5923d7-398d-425e-b3ea-50b48f511aeb.jpg"
+    },
+    {
+      "id": "e695",
+      "nome": "Renato",
+      "cpf": "38008668747",
+      "dataNascimento": "1982-10-14",
+      "senha": "456",
+      "genero": "Masculino",
+      "email": "",
+      "fotoPerfilUrl": "24a4652b-8f52-4355-b856-1d2853563f1b.jpg"
+    },
+    {
+      "id": "e8dd1de6-0feb-4f88-9c85-83e985c4a402",
+      "nome": "Renato Boscariol",
+      "cpf": "49009779885",
+      "dataNascimento": "1969-10-14",
+      "senha": "789",
+      "genero": "",
+      "email": "",
+      "fotoPerfilUrl": "df13911d-ce63-42ca-9869-b5e389aedf10.jpg"
+    }
+  ]
+}
